@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+  background-color: #f0f2f5;
+  height: 100vh;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.signup-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.signup-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.signup-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form label {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.signup-form input[type="text"]:focus,
+.signup-form input[type="email"]:focus,
+.signup-form input[type="password"]:focus {
+  border-color:  rgba(238, 92, 92, 0.747);
+  outline: none;
+}
+
+.signup-form button {
+  padding: 0.75rem;
+  background-color:  rgba(238, 92, 92, 0.747);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #1b9435;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 1.5rem;
+  }
+
+  .signup-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .signup-form input[type="text"],
+  .signup-form input[type="email"],
+  .signup-form input[type="password"] {
+    font-size: 0.875rem;
+  }
+
+  .signup-form button {
+    font-size: 0.875rem;
+  }
+}

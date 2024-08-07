@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('/src/assets/image1.jpg');
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  border-color:rgba(238, 92, 92, 0.747);
+  outline: none;
+}
+
+.login-form button {
+  padding: 0.75rem;
+  background-color: rgba(238, 92, 92, 0.747);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #1b9435;
+}
+
+.login-form .forgot-password {
+  text-align: right;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.login-form .forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.login-form .forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 1.5rem;
+  }
+
+  .login-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    font-size: 0.875rem;
+  }
+
+  .login-form button {
+    font-size: 0.875rem;
+  }
+
+  .login-form .forgot-password a {
+    font-size: 0.75rem;
+  }
+}

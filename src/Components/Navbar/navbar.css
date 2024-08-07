@@ -1,0 +1,41 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  color: white;
+  z-index: 1000;
+  font-weight: 400;
+
+}
+.nav-logo{
+  font-family: Poppins;
+  font-size: 42px;
+  font-weight: 500;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 18px;
+  gap: 60px;
+}
+ 
+.nav-contact{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navi{
+  color:  rgba(238, 92, 92, 0.747);
+  border-radius: 50px;
+  background-color: white;
+  padding: 10px 38px;
+}
+.nava{
+  color:  white;
+  border-radius: 50px;
+  background-color:  rgba(238, 92, 92, 0.747);
+  padding: 10px 38px;
+}
