@@ -4,7 +4,8 @@ import './home.css';
 const Home = ({heroData, heroCount, setHeroCount, playStatus, setPlayStatus}) => {
   return (
     <div className="home">
-      <p>My first Home</p>
+      <p>Customer Feedbacks</p>
+      <p></p>
     </div>
   );
 }
