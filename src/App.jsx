@@ -8,8 +8,13 @@ import Signup from './Components/Sign-up/sign-up';
 import Bookings from './Components/Bookings/bookings';
 import Discover from './Components/Discover/discover';
 import Home from './Components/Home/home';
+import Popular from './Components/Popular/popular';
+import Testimonials from './Components/Testimonials/testimonials';
+import Footer from './Components/Footer/footer';
+
 
 function App() {
+
   let heroData = [
     { text1: "Dive into", text2: "what you love" },
     { text1: "Indulge", text2: "your passions" },
@@ -22,29 +27,32 @@ function App() {
   useEffect(()=>{
     setInterval(()=> {
       setHeroCount((count)=>{return count===2? 0:count+1})
-    }, 6000);
+    }, 8000);
   }, [])
 
+ 
   return (
     <Router>
       <div className="App">
+        <Background heroCount={heroCount} playStatus={playStatus}/>
         <Navbar />
         <Routes>
-          <Route exact path='/home' element={DiscoverPage ({ heroData, heroCount, setHeroCount, playStatus, setPlayStatus }) } />
+          <Route exact path='/' element={LandingPage ({ heroData, heroCount, setHeroCount, playStatus, setPlayStatus }) } />
+          <Route exact path='/home' element={HomePage ({ heroData, heroCount, setHeroCount, playStatus, setPlayStatus }) } />
           <Route exact path='/discover' element={<Discover />} />
           <Route exact path='/bookings' element={<Bookings />} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );
 }
 
-function DiscoverPage({ heroData, heroCount, setHeroCount, playStatus, setPlayStatus }) {
+function LandingPage({ heroData, heroCount, setHeroCount, playStatus, setPlayStatus }) {
   return (
     <>
-      <Background playStatus={playStatus} heroCount={heroCount} />
       <Hero
         heroData={heroData[heroCount]}
         heroCount={heroCount}
@@ -52,7 +60,25 @@ function DiscoverPage({ heroData, heroCount, setHeroCount, playStatus, setPlaySt
         playStatus={playStatus}
         setPlayStatus={setPlayStatus}
       />
-       <Home/>
+    </>
+  );
+}
+
+function HomePage({ heroData, heroCount, setHeroCount, playStatus, setPlayStatus}) {
+  return (
+    <>
+      <Hero
+        heroData={heroData[heroCount]}
+        heroCount={heroCount}
+        setHeroCount={setHeroCount}
+        playStatus={playStatus}
+        setPlayStatus={setPlayStatus}
+      />
+      <Home/>
+      <Popular/>
+      <Testimonials/>
+      <Footer/>
+      
     </>
   );
 }

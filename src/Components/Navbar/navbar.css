@@ -39,3 +39,13 @@
   background-color:  rgba(238, 92, 92, 0.747);
   padding: 10px 38px;
 }
+.close-nav{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color:  rgba(238, 92, 92, 0.747);
+  size: 20px;
+}
+.icon :hover{
+  color:purple ;
+}
