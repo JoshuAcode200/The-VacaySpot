@@ -40,11 +40,10 @@ function App() {
           <Route exact path='/' element={LandingPage ({ heroData, heroCount, setHeroCount, playStatus, setPlayStatus }) } />
           <Route exact path='/home' element={HomePage ({ heroData, heroCount, setHeroCount, playStatus, setPlayStatus }) } />
           <Route exact path='/discover' element={<Discover />} />
-          <Route exact path='/bookings' element={<Bookings />} />
+          <Route exact path='/fetchFlights' element={<Bookings />} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
         </Routes>
-        <Footer/>
       </div>
     </Router>
   );
@@ -75,9 +74,10 @@ function HomePage({ heroData, heroCount, setHeroCount, playStatus, setPlayStatus
         setPlayStatus={setPlayStatus}
       />
       <Home/>
+      <Footer/>
       <Popular/>
       <Testimonials/>
-      <Footer/>
+      
       
     </>
   );

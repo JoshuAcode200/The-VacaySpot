@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import fetchFlights from './fetchFlights'; // Adjust the path as necessary
+import fetchFlights from './fetchFlights'; 
 
 const Bookings = () => {
   const [flights, setFlights] = useState([]);
@@ -7,8 +7,10 @@ const Bookings = () => {
   useEffect(() => {
     const getFlights = async () => {
       try {
-        const data = await fetchFlights('SFO-sky', 'LAX-sky', '2024-09-01'); // Replace with your desired parameters
-        setFlights(data.Quotes || []); // Customize based on the API response structure
+        const data = await fetchFlights();       
+        if (data) {
+          setFlights(data.Quotes || []); 
+        }
       } catch (error) {
         console.error("Error fetching flights", error);
       }

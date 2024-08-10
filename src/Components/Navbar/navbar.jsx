@@ -13,7 +13,7 @@ const Navbar = () => {
         <ul className="nav-menu">
           <li><Link  to='/home'>Home</Link></li>
           <li><Link to='/discover'>Discover</Link></li>
-          <li><Link to='/bookings'>Bookings</Link></li>
+          <li><Link to='/fetchFlights'>Bookings</Link></li>
         </ul>
         <ul className='nav-contact'>
           <li><Link to='/login' className='navi'>Login</Link></li>

@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(207, 180, 180, 0.979);
+  background: white;
+  color:  rgba(238, 92, 92, 0.747);
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -10,6 +11,7 @@
   justify-items: center;
   margin: auto;
   min-height: 100%;
+  margin-bottom: 70px;
 }
 .wrapper1{
   display: flex;
@@ -21,15 +23,16 @@
   .homeText{
     text-align: center;
     margin-top: 50px;
+    margin-left: 20px;
 
     .title{
-      color: white;
+      color:  rgba(238, 92, 92, 0.747);
       font-size: 2rem;
       font-weight: 700;
       line-height: 2.5rem;
     }
     .subtitle{
-      color: white;
+      color:  rgba(238, 92, 92, 0.747);
       opacity: 9;
       font-size: 25px;
       font-weight: 300;
@@ -42,15 +45,13 @@
   }
 }
 .btn{
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 40%;
-  padding: 5px 8px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 20px;
   border-radius: 60px;
-  background-color: white;
+  background-color: rgba(238, 92, 92, 0.747);
   cursor: pointer;
-  color:  rgba(233, 48, 48, 0.747);
+  color:  white;
   font-size: 20px;
   font-weight: 500;
   width: 100%;

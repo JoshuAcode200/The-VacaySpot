@@ -1,27 +1,21 @@
 import axios from 'axios';
 
-const fetchFlights = async (origin, destination, departureDate) => {
+const fetchFlights = async () => {
   const options = {
     method: 'GET',
-    url: 'rapidapi.com',
-    params: {
-      originPlace: origin,
-      destinationPlace: destination,
-      outboundDate: departureDate,
-      adults: '1', // Customize as needed
-    },
+    url: 'https://sky-scanner3.p.rapidapi.com/get-config',
     headers: {
-      'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_KEY,
-      'X-RapidAPI-Host': 'skyscanner-skyscanner-flight-search-v1.p.rapidapi.com'
-    }
+      'x-rapidapi-key': process.env.REACT_APP_RAPIDAPI_KEY,
+      'x-rapidapi-host': 'sky-scanner3.p.rapidapi.com',
+    },
   };
 
   try {
     const response = await axios.request(options);
     return response.data;
   } catch (error) {
-    console.error("Error fetching flight data", error);
-    throw error;
+    console.error(error);
+    return null;
   }
 };
 

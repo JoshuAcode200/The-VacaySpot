@@ -96,8 +96,8 @@ const Home = ({heroData, heroCount, setHeroCount, playStatus, setPlayStatus}) =>
         </div>
       </div>
       <div className='wrapper2'>
-        <button className="btn">
-          <a href='/bookings'>Book Now!</a>
+        <button onClick='/bookings' className="btn">
+          Book Now!
         </button>
       </div>
     </section>
