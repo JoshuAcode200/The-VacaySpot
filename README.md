@@ -5,14 +5,6 @@ The VacaySpot is a React-based web application designed to help users discover, 
 #Discover Destinations: 
 Search and explore various travel destinations worldwide.
 
-#Accommodation Details: Find the best places to stay with detailed descriptions, ratings, and reviews.
-
-#Activities and Attractions: Discover activities and attractions in your selected destination.
-
-#User Favorites: Save favorite destinations and activities for future reference.
-
-#Responsive Design: A mobile-friendly interface that works on all devices.
-
 #Technologies Used
 React - A JavaScript library for building user interfaces.
 RapidAPI - React's built-in feature for managing global state.
@@ -46,18 +38,7 @@ npm start
 Usage
 Open the app in your web browser.
 Use different routes in the website like Discover, Bookings, Login and Sign Up
-View detailed information about accommodations, activities, and more.
-Save your favorite destinations to your personal list.
-API
-The VacaySpot fetches data from a third-party travel API(RapidAPI). Ensure you have the necessary API keys and configurations set up in your environment.
 
-Environment Variables
-Create a .env file in the root of your project and add the following:
-
-makefile
-Copy code
-REACT_APP_API_KEY=your_api_key_here
-REACT_APP_API_URL=https://api.example.com/v1/
 Project Structure
 java
 Copy code
@@ -68,7 +49,6 @@ Copy code
 │   ├── redux
 │   ├── context
 │   ├── styles
-│   ├── utils
 │   ├── App.js
 │   ├── index.js
 ├── .env
